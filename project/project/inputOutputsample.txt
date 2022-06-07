@@ -1,0 +1,30 @@
+set a 12
+OK
+add a 13
+OK
+sum a
+OK 25
+get a
+OK [12, 13]
+getany a
+OK 12
+delete a
+OK
+get a
+OK, BUT NO VALUES DETECTED
+set r.a 1
+OK
+set r1.a 20
+OK
+set r2.a 300
+OK
+set r3.a 4000
+OK
+dsum a including r r2 r3
+OK 4321
+dsum a including a r r2
+SERVER: ERR Non-existence or ambiguous repository a
+set b 312
+OK
+listkey
+OK, KEYS ARE[a, b]
